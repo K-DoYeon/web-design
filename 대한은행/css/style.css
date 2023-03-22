@@ -1,0 +1,169 @@
+*{box-sizing: border-box;}
+body{
+    margin: 0;
+    background-color: #ffffff;
+    color: #333333;
+    font-size: 16px;
+    font-family: sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+}
+a{
+    text-decoration: none;
+    color: #333333;
+}
+header{
+    max-width: 100%;
+    height: 100px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #0076be;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.gnb{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.gnb li{
+    width: 150px;
+    text-align: center;
+    position: relative;
+}
+.gnb li>a{
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 50px;
+    
+}
+.gnb>li:hover{
+    background-color: #e66b27;
+    transition: all 0.3s;
+}
+.sub{
+    height: 204px;
+    list-style: none;
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #0076be;
+    display: none;
+    z-index: 99;
+}
+.sub>li{
+    align-items: center;
+    top: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.sub>li a{
+    border-bottom: 1px solid #333333;
+}
+.sub>li:last-child>a{
+    border: none;
+}
+.bo{
+    padding-top: 18px;
+}
+.sub>li:hover{
+    background-color: #e66b27;
+    transition: all 0.3s;
+}
+.container{
+    width: 1200px;
+    margin: auto;
+    padding: auto;
+}
+/* hero */
+.hero{
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+.slidein{
+    width: 3600px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.slidein>img{
+    float: left;
+}
+/* main */
+.main{
+    height: 190px;
+    padding-top: 10px;
+}
+.row{
+    display: flex;
+    height: 200px;
+}
+.notic-gallery{
+    width: 40%;
+    
+}
+.notic-gallery a{
+    margin: 0;
+    padding: 0;
+}
+.tab{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+}
+.tab a{
+    display: block;
+    line-height: 40px;
+    background: #0076be;
+    color: #e66b27;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.tab a.active{
+    background-color: #7bbde6;
+    color: #000000;
+    font-weight: bold;
+}
+.tab-content{
+    background-color: #7bbde6;
+    padding: 5px 0px 0px 0px
+}
+.tab-content>div{
+    display: none;
+}
+.tab-content>div.active{
+    display: block;
+}
+#notice li{
+    border-bottom: 1px solid #333;
+    padding-bottom: 9px;
+    padding-top: 3px;
+}
+#notice li:hover{
+    background-color: #0076be
+}
+#gallery{
+    text-align: center;
+
+}
+#gallery img{
+    width: 120px;
+    height: 150px;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+.banner{
+    width: 30%;
+}
+.banner img{
+    margin-top: 3.8px;
+}
+
+        
